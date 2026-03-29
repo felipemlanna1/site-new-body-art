@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c41e3a"/>
+      <stop offset="100%" stop-color="#8b1528"/>
+    </linearGradient>
+    <linearGradient id="fadeRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c41e3a" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c41e3a"/>
+      <stop offset="100%" stop-color="#c41e3a" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#c41e3a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer border frame -->
+  <rect x="5" y="5" width="410" height="120" rx="4" fill="none" stroke="#333" stroke-width="1" opacity="0.4"/>
+  <rect x="8" y="8" width="404" height="114" rx="3" fill="none" stroke="#c41e3a" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Corner ornaments - tribal style -->
+  <g opacity="0.5">
+    <path d="M 12 12 L 40 12 L 35 17 L 17 17 L 17 35 L 12 40 Z" fill="url(#redGrad)" opacity="0.4"/>
+    <path d="M 408 12 L 380 12 L 385 17 L 403 17 L 403 35 L 408 40 Z" fill="url(#redGrad)" opacity="0.4"/>
+    <path d="M 12 118 L 40 118 L 35 113 L 17 113 L 17 95 L 12 90 Z" fill="url(#redGrad)" opacity="0.4"/>
+    <path d="M 408 118 L 380 118 L 385 113 L 403 113 L 403 95 L 408 90 Z" fill="url(#redGrad)" opacity="0.4"/>
+  </g>
+
+  <!-- Tribal side decorations -->
+  <g opacity="0.25">
+    <path d="M 14 50 L 18 45 L 18 55 Z" fill="#c41e3a"/>
+    <path d="M 14 65 L 18 60 L 18 70 Z" fill="#c41e3a"/>
+    <path d="M 14 80 L 18 75 L 18 85 Z" fill="#c41e3a"/>
+    <path d="M 406 50 L 402 45 L 402 55 Z" fill="#c41e3a"/>
+    <path d="M 406 65 L 402 60 L 402 70 Z" fill="#c41e3a"/>
+    <path d="M 406 80 L 402 75 L 402 85 Z" fill="#c41e3a"/>
+  </g>
+
+  <!-- Tattoo machine silhouette left -->
+  <g transform="translate(30, 30) scale(0.6)" opacity="0.15">
+    <path d="M 10 50 L 10 20 L 15 15 L 25 15 L 30 20 L 30 30 L 40 30 L 40 35 L 30 35 L 30 50 Z" fill="#c41e3a"/>
+    <line x1="20" y1="50" x2="20" y2="70" stroke="#c41e3a" stroke-width="2"/>
+    <circle cx="20" cy="72" r="2" fill="#c41e3a"/>
+  </g>
+
+  <!-- Tattoo machine silhouette right -->
+  <g transform="translate(360, 30) scale(0.6)" opacity="0.15">
+    <path d="M 30 50 L 30 20 L 25 15 L 15 15 L 10 20 L 10 30 L 0 30 L 0 35 L 10 35 L 10 50 Z" fill="#c41e3a"/>
+    <line x1="20" y1="50" x2="20" y2="70" stroke="#c41e3a" stroke-width="2"/>
+    <circle cx="20" cy="72" r="2" fill="#c41e3a"/>
+  </g>
+
+  <!-- Top decorative line -->
+  <line x1="50" y1="22" x2="170" y2="22" stroke="url(#fadeRed)" stroke-width="0.8"/>
+  <line x1="250" y1="22" x2="370" y2="22" stroke="url(#fadeRed)" stroke-width="0.8"/>
+  <circle cx="210" cy="22" r="3" fill="none" stroke="#c41e3a" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="210" cy="22" r="1" fill="#c41e3a" opacity="0.4"/>
+
+  <!-- Main text: NEW BODY ART -->
+  <text x="210" y="58" text-anchor="middle" font-family="'Oswald', sans-serif" font-size="36" font-weight="700" fill="#f5f0e8" letter-spacing="6" filter="url(#shadow)">
+    NEW BODY ART
+  </text>
+
+  <!-- Divider -->
+  <line x1="90" y1="70" x2="180" y2="70" stroke="url(#fadeRed)" stroke-width="1"/>
+  <line x1="240" y1="70" x2="330" y2="70" stroke="url(#fadeRed)" stroke-width="1"/>
+  <polygon points="205,70 210,66 215,70 210,74" fill="#c41e3a" opacity="0.6"/>
+
+  <!-- Subtitle -->
+  <text x="210" y="86" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" font-weight="400" fill="#c41e3a" letter-spacing="5" opacity="0.8">
+    TATTOO &amp; BODY PIERCING
+  </text>
+
+  <!-- Est line -->
+  <text x="210" y="103" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" font-weight="300" fill="#666" letter-spacing="3">
+    LAGOA DA CONCEIÇÃO · EST. 2004
+  </text>
+
+  <!-- Bottom decorative line -->
+  <line x1="50" y1="112" x2="170" y2="112" stroke="url(#fadeRed)" stroke-width="0.8"/>
+  <line x1="250" y1="112" x2="370" y2="112" stroke="url(#fadeRed)" stroke-width="0.8"/>
+
+  <!-- Stars between lines -->
+  <g opacity="0.3">
+    <polygon points="180,112 182,108 184,112 180,114 184,114" fill="#c41e3a" transform="scale(0.5) translate(350,210)"/>
+    <polygon points="240,112 242,108 244,112 240,114 244,114" fill="#c41e3a" transform="scale(0.5) translate(460,210)"/>
+  </g>
+
+  <!-- Ink splatter details -->
+  <g opacity="0.08">
+    <circle cx="70" cy="65" r="15" fill="#c41e3a"/>
+    <circle cx="78" cy="58" r="8" fill="#c41e3a"/>
+    <circle cx="65" cy="72" r="6" fill="#c41e3a"/>
+    <circle cx="350" cy="65" r="15" fill="#c41e3a"/>
+    <circle cx="342" cy="58" r="8" fill="#c41e3a"/>
+    <circle cx="355" cy="72" r="6" fill="#c41e3a"/>
+  </g>
+
+  <!-- Additional tribal motifs for file size -->
+  <g opacity="0.12">
+    <path d="M 55 45 Q 60 40 65 45 Q 60 50 55 45 Z" fill="#c41e3a"/>
+    <path d="M 355 45 Q 360 40 365 45 Q 360 50 355 45 Z" fill="#c41e3a"/>
+    <path d="M 55 85 Q 60 80 65 85 Q 60 90 55 85 Z" fill="#c41e3a"/>
+    <path d="M 355 85 Q 360 80 365 85 Q 360 90 355 85 Z" fill="#c41e3a"/>
+  </g>
+
+  <!-- Dotwork pattern accents -->
+  <g opacity="0.1">
+    <circle cx="100" cy="40" r="1" fill="#c41e3a"/>
+    <circle cx="105" cy="38" r="1" fill="#c41e3a"/>
+    <circle cx="110" cy="36" r="1" fill="#c41e3a"/>
+    <circle cx="115" cy="35" r="1" fill="#c41e3a"/>
+    <circle cx="320" cy="40" r="1" fill="#c41e3a"/>
+    <circle cx="315" cy="38" r="1" fill="#c41e3a"/>
+    <circle cx="310" cy="36" r="1" fill="#c41e3a"/>
+    <circle cx="305" cy="35" r="1" fill="#c41e3a"/>
+    <circle cx="100" cy="92" r="1" fill="#c41e3a"/>
+    <circle cx="105" cy="94" r="1" fill="#c41e3a"/>
+    <circle cx="110" cy="96" r="1" fill="#c41e3a"/>
+    <circle cx="115" cy="97" r="1" fill="#c41e3a"/>
+    <circle cx="320" cy="92" r="1" fill="#c41e3a"/>
+    <circle cx="315" cy="94" r="1" fill="#c41e3a"/>
+    <circle cx="310" cy="96" r="1" fill="#c41e3a"/>
+    <circle cx="305" cy="97" r="1" fill="#c41e3a"/>
+  </g>
+</svg>
